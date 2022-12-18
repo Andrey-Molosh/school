@@ -1,18 +1,33 @@
 $secondary-color: #333333;
 $primary-color: #2f80ed;
 
-
-.intro {
-	padding: 10px;
-	width: 100%;
-	height: 100vh;
+html, body {
+	height: 100%;
 }
 
-header{
+.intro {
+	min-height: 100%;
+	
+	padding: 10px;
+	width: 100%;
+	
 	max-width: 700px;
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+header{
+	display: flex;
 	justify-content: space-between;
+}
+
+.about {
+	margin-bottom: 30px;
 }
 
 .logo{
@@ -29,24 +44,11 @@ header{
 	background-color: rgb(247, 247, 247);
 }
 
-main {
-	max-width: 700px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-}
 
-footer {
-	max-width: 700px;
-	margin: 0 auto;
-}
-
-
-html {
-	font-family: roboto, sans-serif;
-}
 
 * {
 	color: $secondary-color;
+	box-sizing: border-box;
 }
 
 h1{
@@ -57,20 +59,24 @@ h1{
 
 h2 {
 	color: $secondary-color;
-	font-size: 1em;
+	font-size: 1.5em;
 	margin-top: 0;
 	margin-bottom: 1em;
 }
 
-
-section {
-	margin-bottom: 2em;
-	
+h3 {
+	color: $secondary-color;
+	font-size: 1.2em;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 a {
 	color: $primary-color;
 }
+
+// main
+
 .contact_section {
 	background-color: #cabebe;
 }
@@ -80,7 +86,7 @@ a {
 }
 .contact {
 	display: flex;
-	margin-bottom: 10px;
+	padding: 5px;
 	
 }
 .contact_type {
@@ -95,6 +101,13 @@ a {
 
 pre {
 	color: rgb(116, 137, 194);
+}
+
+// footer
+
+footer {
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .container {
